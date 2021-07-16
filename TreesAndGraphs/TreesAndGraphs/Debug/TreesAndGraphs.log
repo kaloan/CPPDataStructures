@@ -1,0 +1,315 @@
+﻿  AVLTree.cpp
+d:\visual studio\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2988: unrecognizable template declaration/definition
+d:\visual studio\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2059: syntax error: 'string'
+d:\visual studio\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2143: syntax error: missing ';' before '{'
+d:\visual studio\vc\tools\msvc\14.15.26726\include\sal.h(2361): error C2447: '{': missing function header (old-style formal list?)
+d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(280): error C2065: 'uintptr_t': undeclared identifier
+d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(280): error C2146: syntax error: missing ')' before identifier '_StackCookie'
+d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(288): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(288): error C2146: syntax error: missing ';' before identifier '__security_cookie'
+d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(296): warning C4161: #pragma pack(pop...): more pops than pushes
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt.h(250): error C2061: syntax error: identifier 'uintptr_t'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt.h(262): error C2061: syntax error: identifier 'uintptr_t'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\crtdbg.h(631): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\crtdbg.h(641): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stddef.h(53): error C2143: syntax error: missing ';' before '__cdecl'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stddef.h(53): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stddef.h(53): error C2370: 'uintptr_t': redefinition; different storage class
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\vcruntime.h(288): note: see declaration of 'uintptr_t'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdlib.h(164): error C2061: syntax error: identifier 'uintptr_t'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(274): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(283): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(292): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(300): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(306): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(314): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(320): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(329): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(335): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(345): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(351): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(362): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(368): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(376): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(382): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(390): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(396): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(403): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(409): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(417): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(423): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(432): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(438): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(448): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(454): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(461): error C2061: syntax error: identifier 'va_list'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(467): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(482): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(482): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(482): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(483): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(483): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(484): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(485): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(485): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(485): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(500): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(500): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(500): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(501): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(501): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(502): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(503): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(503): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(503): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(519): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(519): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(519): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(520): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(520): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(521): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(522): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(522): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(522): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(539): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(539): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(539): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(540): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(540): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(541): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(542): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(542): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(542): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(560): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(560): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(560): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(561): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(561): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(562): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(563): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(563): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(563): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(578): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(578): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(578): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(579): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(579): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(580): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(581): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(581): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(581): error C2059: syntax error: 'constant'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(596): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(596): error C2146: syntax error: missing ';' before identifier '_ArgList'
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(596): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(597): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(597): error C2065: 'va_list': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(598): error C2065: '_ArgList': undeclared identifier
+c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\corecrt_wstdio.h(598): fatal error C1003: error count exceeds 100; stopping compilation
+  BinaryOrderTree.cpp
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(51): error C2143: syntax error: missing ';' before '&'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(57): note: see reference to class template instantiation 'BinaryOrderTree<T>' being compiled
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(51): error C2433: 'ostream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(51): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(51): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(52): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(52): error C2433: 'istream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(52): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(52): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(53): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(53): error C2433: 'ofstream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(53): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(53): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(54): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(54): error C2433: 'ifstream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(54): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(54): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(135): error C3861: 'BinOrdTree': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(135): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(136): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(137): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(143): error C3861: 'BinOrdTree': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(143): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(144): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(145): error C3861: 'result': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2872: 'ostream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(51): note: could be 'int ostream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(618): note: or       'std::ostream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2065: 'output': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2059: syntax error: 'const'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(279): error C2923: 'BinaryOrderTree': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(280): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(280): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2872: 'istream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(52): note: could be 'int istream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(617): note: or       'std::istream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2065: 'input': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2923: 'BinaryOrderTree': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2955: 'BinaryOrderTree': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(13): note: see declaration of 'BinaryOrderTree'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2065: 'tree': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C2473: 'operator >>': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(288): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(288): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(288): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(288): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2872: 'ofstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(53): note: could be 'int ofstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(626): note: or       'std::ofstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2065: 'outFIle': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2059: syntax error: 'const'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(296): error C2923: 'BinaryOrderTree': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(297): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(297): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2872: 'ifstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(54): note: could be 'int ifstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(625): note: or       'std::ifstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2065: 'inFile': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2923: 'BinaryOrderTree': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2955: 'BinaryOrderTree': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.h(13): note: see declaration of 'BinaryOrderTree'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2065: 'tree': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2473: 'operator >>': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(304): error C2374: '>>': redefinition; multiple initialization
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(287): note: see declaration of '>>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(305): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(305): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(305): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\binaryordertree.cpp(305): error C2447: '{': missing function header (old-style formal list?)
+  main.cpp
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(11): error C3861: 'NULL': identifier not found
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(13): note: see reference to class template instantiation 'Node<T>' being compiled
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C2143: syntax error: missing ';' before '&'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(50): note: see reference to class template instantiation 'LinkedList<T>' being compiled
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C2433: 'ostream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C2433: 'istream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C2433: 'ofstream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C2433: 'ifstream': 'friend' not permitted on data declarations
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C2238: unexpected token(s) preceding ';'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(69): error C3861: 'newElemPtr': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(70): error C3861: 'newElemPtr': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(71): error C3861: 'newElemPtr': identifier not found
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2872: 'ostream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): note: could be 'int ostream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(618): note: or       'std::ostream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2065: 'output': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2923: 'LinkedList': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2955: 'LinkedList': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(16): note: see declaration of 'LinkedList'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2065: 'list': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C2473: 'operator <<': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(215): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(215): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(215): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(215): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2872: 'istream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): note: could be 'int istream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(617): note: or       'std::istream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2065: 'input': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2923: 'LinkedList': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2955: 'LinkedList': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(16): note: see declaration of 'LinkedList'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2065: 'list': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C2473: 'operator >>': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(223): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(223): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(223): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(223): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2872: 'ofstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): note: could be 'int ofstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(626): note: or       'std::ofstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2065: 'outFile': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2923: 'LinkedList': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2955: 'LinkedList': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(16): note: see declaration of 'LinkedList'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2065: 'list': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2473: 'operator <<': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(231): error C2374: '<<': redefinition; multiple initialization
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): note: see declaration of '<<'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(232): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(232): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(232): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(232): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2872: 'ifstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): note: could be 'int ifstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(625): note: or       'std::ifstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2143: syntax error: missing ';' before '&'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2065: 'inFile': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2065: 'T': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2923: 'LinkedList': 'T' is not a valid template type argument for parameter 'T'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2955: 'LinkedList': use of class template requires template argument list
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(16): note: see declaration of 'LinkedList'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2065: 'list': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2473: 'operator >>': looks like a function definition, but there is no parameter list.
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(239): error C2374: '>>': redefinition; multiple initialization
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): note: see declaration of '>>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(240): error C2988: unrecognizable template declaration/definition
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(240): error C2059: syntax error: '<end Parse>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(240): error C2143: syntax error: missing ';' before '{'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(240): error C2447: '{': missing function header (old-style formal list?)
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C2872: 'ostream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): note: could be 'int ostream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(618): note: or       'std::ostream'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\main.cpp(10): note: see reference to class template instantiation 'LinkedList<IntList>' being compiled
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C2872: 'istream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): note: could be 'int istream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(617): note: or       'std::istream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C2872: 'ofstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): note: could be 'int ofstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(626): note: or       'std::ofstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C2872: 'ifstream': ambiguous symbol
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): note: could be 'int ifstream'
+  d:\visual studio\vc\tools\msvc\14.15.26726\include\iosfwd(625): note: or       'std::ifstream'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(38): error C2065: 'NULL': undeclared identifier
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(44): error C2365: '<<': redefinition; previous definition was 'data variable'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): note: see declaration of '<<'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(6): note: see reference to class template instantiation 'LinkedList<int>' being compiled
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\main.cpp(16): note: see reference to class template instantiation 'Node<T>' being compiled
+          with
+          [
+              T=IntList
+          ]
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(45): error C2365: '>>': redefinition; previous definition was 'data variable'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): note: see declaration of '>>'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(46): error C2365: '<<': redefinition; previous definition was 'data variable'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(214): note: see declaration of '<<'
+c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.h(47): error C2365: '>>': redefinition; previous definition was 'data variable'
+  c:\users\kaloa\source\repos\treesandgraphs\treesandgraphs\linkedlist.cpp(222): note: see declaration of '>>'
+  Generating Code...
