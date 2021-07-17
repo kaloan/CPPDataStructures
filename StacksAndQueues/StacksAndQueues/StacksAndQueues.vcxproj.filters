@@ -15,22 +15,27 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
     <ClInclude Include="BasicLinkedDataStructure.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedQueue.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="LinkedStack.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="LinkedQueue.h">
+    <ClInclude Include="ArrayQueue.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="ArrayStack.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="BasicArrayDataStructure.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ArrayQueue.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

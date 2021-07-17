@@ -10,28 +10,28 @@ protected:
 	{
 		if (!otherStack.start)
 		{
-			top = NULL;
+			this->start = NULL;
 			return;
 		}
 		Node<T>* sDroppingTop = otherStack.start;
 		Node<T>* thisDroppingTop = NULL;
-		start = new Node<T>(sDroppingTop->data);
-		start->next = thisDroppingTop;
-		thisDroppingTop = start;
-		sDroppingTop = sDroppingTop->previous;
-		while (sDroppingtop)
+		this->start = new Node<T>(sDroppingTop->data);
+		//this->start->next = thisDroppingTop;
+		thisDroppingTop = this->start;
+		sDroppingTop = sDroppingTop->next;
+		while (sDroppingTop)
 		{
 			Node<T>* oneStepDrop = new Node<T>(sDroppingTop->data);
 			thisDroppingTop->next = oneStepDrop;
 			thisDroppingTop = oneStepDrop;
 			sDroppingTop = sDroppingTop->next;
 		}
-		thisDroppingTop->next = NULL;
+		//thisDroppingTop->next = NULL;
 	}
 
 
 public:
-	LinkedStack() : BasicLinkedDataStructure() {} //O(1)
+	LinkedStack() : BasicLinkedDataStructure<T>() {} //O(1)
 	LinkedStack(const LinkedStack<T>& otherStack) //O(otherQueue.len)
 	{
 		copy(otherStack);
@@ -40,21 +40,21 @@ public:
 	{
 		if (this != &otherStack)
 		{
-			clear();
+			this->clear();
 			copy(otherStack);
 		}
 		return *this;
 	}
-	~LinkedStack() : ~BasicLinkedDataStructure() {} //O(len)
+	~LinkedStack() {} //O(len)
 
 	void push(const T& x) //O(1)
 	{
-		Node<T>* newStart = new Node(x);
-		newStart->next = start;
-		start = newStart;
+		Node<T>* newStart = new Node<T>(x);
+		newStart->next = this->start;
+		this->start = newStart;
 	}
 	
-	friend ostream& operator<<(ostream& out, const LinkedStack<T>& l) // O(len)
+	friend std::ostream& operator<<(std::ostream& out, const LinkedStack<T>& l) // O(len)
 	{
 		if (l.empty())
 		{
@@ -62,7 +62,12 @@ public:
 			return out;
 		}
 		Node<T>* curr = l.start;
-		int arrSize = l.len();
+		while (curr)
+		{
+			out << curr->data << " ";
+			curr = curr->next;
+		}
+		/*int arrSize = l.len();
 		T* elements = new T[arrSize];
 		for (int i = 0; i < arrSize; i++)
 		{
@@ -73,21 +78,27 @@ public:
 		{
 			out << elements[i] << " ";
 		}
-		delete[] elements;
+		delete[] elements;*/
 		delete curr; //Защото ще е NULL
+		out << std::endl;
 		return out;
 	}
-	friend istream& operator>>(istream& in, const LinkedStack<T>& l) //О(1)
+	friend std::istream& operator>>(std::istream& in, LinkedStack<T>& l) //О(1)
 	{
 		T what;
 		in >> what;
 		l.push(what);
 		return in;
 	}
-	friend ofstream& operator<<(ofstream& fOut, const LinkedStack<T>& l)//O(len)
+	friend std::ofstream& operator<<(std::ofstream& fOut, const LinkedStack<T>& l)//O(len)
 	{
 		Node<T>* curr = l.start;
-		int arrSize = l.len();
+		while (curr)
+		{
+			fOut << curr->data << " ";
+			curr = curr->next;
+		}
+		/*int arrSize = l.len();
 		T* elements = new T[arrSize];
 		for (int i = 0; i < arrSize; i++)
 		{
@@ -98,11 +109,12 @@ public:
 		{
 			fOut << elements[i];
 		}
-		delete[] elements;
+		delete[] elements;*/
 		delete curr; //Защото ще е NULL
+		fOut << std::endl;
 		return fOut;
 	}
-	friend ifstream& operator>>(ifstream& fIn, const LinkedStack<T>& l) //O(1)
+	friend std::ifstream& operator>>(std::ifstream& fIn, LinkedStack<T>& l) //O(1)
 	{
 		T what;
 		fIn >> what;

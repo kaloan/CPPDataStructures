@@ -25,17 +25,17 @@ public:
 
 	void clear() //O(len)
 	{
-		delete[] arr;
+		if(arr) delete[] arr;
 	}
 
 	virtual void push(const T&) = 0;
 	virtual T pop() = 0;
 
-	bool empty() //O(1)
+	bool empty() const //O(1)
 	{
 		if (start==-1) return true;
 		return false;
 	}
-	virtual int len() = 0;
+	virtual int len() const = 0;
 
 };

@@ -8,36 +8,36 @@ class ArrayStack : public BasicArrayDataStructure<T>
 protected:
 	void resize() //O(len)
 	{
-		T* newArr = new T[size + 100];
-		for (int i = 0; i < start; i++)
+		T* newArr = new T[this->size + 100];
+		for (int i = 0; i < this->start; i++)
 		{
-			newArr[i] = arr[i];
+			newArr[i] = this->arr[i];
 		}
-		size += 100;
-		delete[] arr;
-		arr = newArr;
+		this->size += 100;
+		delete[] this->arr;
+		this->arr = newArr;
 	}
 
 	void copy(const ArrayStack<T>& other) //O(other.len)
 	{
 		if (other.empty())
 		{
-			start = -1;
-			size = 0;
-			arr = NULL;
+			this->start = -1;
+			this->size = 0;
+			this->arr = NULL;
 		}
-		size = other.start + 1;
-		start = other.start;
-		arr = new T[size];
-		for (int i = 0; i < size; i++)
+		this->size = other.len();
+		this->start = other.start;
+		this->arr = new T[this->size];
+		for (int i = 0; i < this->size; i++)
 		{
-			arr[i] = other.arr[i];
+			this->arr[i] = other.arr[i];
 		}
 	}
 
 
 public:
-	ArrayStack():BasicArrayDataStructure(){}
+	ArrayStack():BasicArrayDataStructure<T>(){}
 	ArrayStack(const ArrayStack<T>& other) //O(other.len)
 	{
 		copy(other);
@@ -46,49 +46,49 @@ public:
 	{
 		if (this != &otherStack)
 		{
-			clear();
+			this->clear();
 			copy(otherStack);
 		}
 		return *this;
 	}
-	~ArrayStack() : ~BasicArrayDataStructure(){}
+	~ArrayStack(){}
 
-	void push(const T& p) //O(1), а ако трябва да се преоразмерява става О(len) 
+	void push(const T& x) //O(1), а ако трябва да се преоразмерява става О(len) 
 	{
-		if (!arr||start+1==size) resize();
-		arr[start++] = T;
+		if (!this->arr || len() == this->size) resize();
+		this->arr[++this->start] = x;
 	}
 	T pop() //O(1)
 	{
-		if (empty())
+		if (this->empty())
 		{
-			cerr << "The stack is empty!";
+			std::cerr << "The stack is empty!" << std::endl;
 			return T();
 		}
-		T res = arr[start];
-		start--;
+		T res = this->arr[this->start--];
 		return res;
 	}
 
-	int len() //O(1)
+	int len() const //O(1)
 	{
-		return start + 1;
+		return this->start + 1;
 	}
 
-	friend ostream& operator<<(ostream& out, const ArrayStack<T>& l) // O(len)
+	friend std::ostream& operator<<(std::ostream& out, const ArrayStack<T>& l) // O(len)
 	{
 		if (l.empty())
 		{
 			out << "The stack is empty.";
 			return out;
 		}
-		for (int i = start; i >= 0; i--)
+		for (int i = l.start; i >= 0; i--)
 		{
-			out << arr[i] << " ";
+			out << l.arr[i] << " ";
 		}
+		out << std::endl;
 		return out;
 	}
-	friend istream& operator>>(istream& in, const ArrayStack<T>& l) //О(1)
+	friend std::istream& operator>>(std::istream& in, const ArrayStack<T>& l) //О(1), а ако трябва да се преоразмерява става О(len)
 	{
 		T what;
 		in >> what;
@@ -96,15 +96,16 @@ public:
 		return in;
 	}
 
-	friend ofstream& operator<<(ofstream& fOut, const ArrayStack<T>& l) //O(len)
+	friend std::ofstream& operator<<(std::ofstream& fOut, const ArrayStack<T>& l) //O(len)
 	{
-		for (int i = start; i >= 0; i--)
+		for (int i = l.start; i >= 0; i--)
 		{
-			fOut << arr[i];
+			fOut << l.arr[i];
 		}
+		fOut << std::endl;
 		return fOut;
 	}
-	friend ifstream& operator>>(ifstream& fIn, const ArrayStack<T>& l) //O(1)
+	friend std::ifstream& operator>>(std::ifstream& fIn, const ArrayStack<T>& l) //O(1), а ако трябва да се преоразмерява става О(len)
 	{
 		T what;
 		fIn >> what;

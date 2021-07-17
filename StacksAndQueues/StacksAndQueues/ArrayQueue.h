@@ -10,30 +10,34 @@ protected:
 
 	void resize() //O(len)
 	{
-		T* temp = arr;
-		arr = new T[size + 100];
-		int j = 0;
-		if (last >= start)
+		T* temp = this->arr;
+		this->arr = new T[this->size + 100];
+		if (temp)
 		{
-			for (int i = start; i <= last; i++)
+			int j = 0;
+			if (last >= this->start)
 			{
-				arr[j++] = temp[i];
+				for (int i = this->start; i <= last; i++)
+				{
+					this->arr[j++] = temp[i];
+				}
+				last = j - 1;
 			}
-			last = j;
+			else
+			{
+				for (int i = this->start; i < this->size; i++)
+				{
+					this->arr[j++] = temp[i];
+				}
+				for (int i = 0; i <= last; i++)
+				{
+					this->arr[j++] = temp[i];
+				}
+				last = j - 1;
+			}
+			this->start = 0;
 		}
-		else
-		{
-			for (int i = start; i < size; i++)
-			{
-				arr[j++] = temp[i];
-			}
-			for (int i = 0; i <= last; i++)
-			{
-				arr[j++] = temp[i];
-			}
-			last = j;
-		}
-		size += 100;
+		this->size += 100;
 		delete[] temp;
 	}
 	void copy(const ArrayQueue<T>& other) //O(other.len)
@@ -41,38 +45,38 @@ protected:
 		if (other.empty())
 		{
 			last = -1;
-			start = -1;
-			arr = NULL;
-			size = 0;
+			this->start = -1;
+			this->arr = NULL;
+			this->size = 0;
 			return;
 		}
-		size = other.len();
-		arr = new T[size];
-		start = 0;
+		this->size = other.len();
+		this->arr = new T[this->size];
+		this->start = 0;
 		int j = 0;
 		if (other.last >= other.start)
 		{
 			for (int i = other.start; i <= other.last; i++)
 			{
-				arr[j++] = other[i];
+				this->arr[j++] = other.arr[i];
 			}
-			last = j;
+			last = j - 1;
 		}
 		else
 		{
 			for (int i = other.start; i < other.size; i++)
 			{
-				arr[j++] = other[i];
+				this->arr[j++] = other.arr[i];
 			}
 			for (int i = 0; i <= other.last; i++)
 			{
-				arr[j++] = other[i];
+				this->arr[j++] = other.arr[i];
 			}
-			last = j;
+			last = j - 1;
 		}
 	}
 public:
-	ArrayQueue() : BasicArrayDataStructure() 
+	ArrayQueue() : BasicArrayDataStructure<T>() 
 	{
 		last = -1;
 	}
@@ -84,70 +88,74 @@ public:
 	{
 		if (this != &otherQueue)
 		{
-			clear();
+			this->clear();
 			copy(otherQueue);
 		}
 		return *this;
 	}
-	~ArrayQueue() : ~BasicArrayDataStructure() {} // O(len)
+	~ArrayQueue(){} // O(len)
 
-	void push(const T& p) //O(1), а ако трябва да се преоразмерява става О(len) 
+	void push(const T& x) //O(1), а ако трябва да се преоразмерява става О(len) 
 	{
-		if (!arr || arr.len() == size) resize();
-		if (start == -1) start = 0;
-		arr[last] = x;
-		last++;
-		last = last % size;
+		if (!this->arr || len() == this->size) resize();
+		if (this->start == -1) this->start = 0;
+		this->arr[++last] = x;
+		last = last % this->size;
 	}
 	T pop() //O(1)
 	{
-		if (empty())
+		if (this->empty())
 		{
-			cerr << "The Queue is empty!";
+			std::cerr << "The Queue is empty!" << std::endl;
 			return T();
 		}
-		T x = arr[start];
-		start++;
-		start = start % size;
-		return x;
+		T x = this->arr[this->start];
+		this->start++;
+		this->start = this->start % this->size;
+		return x;
+
 	}
 
-	int len() //O(1)
+	int len() const //O(1)
 	{
-		if (last >= start)
+		if (last >= this->start)
 		{
-			return last - start+1;
+			return last - this->start + 1;
 		}
-		int fPart = size - start + 1;
+		int fPart = this->size - this->start + 1;
 		int sPart = last + 1;
 		return fPart + sPart;
 	}
 
-	friend ostream& operator<<(ostream& out, const ArrayQueue<T>& a) // O(len)
+	friend std::ostream& operator<<(std::ostream& out, const ArrayQueue<T>& a) // O(len)
 	{
 		if (a.empty())
 		{
-			out << "The queue is empty.";
+			out << "The queue is empty." << std::endl;
 			return out;
 		}
-		if (a.last >= a.start) {
-			for (int i = start; i <= last; i++)
+		if (a.last >= a.start) 
+		{
+			for (int i = a.start; i <= a.last; i++)
 			{
 				out << a.arr[i] << " ";
 			}
-			return out;
 		}
-		for (int i = a.start; i < a.size; i++)
+		else 
 		{
-			out << a.arr[i] << " ";
-		}
-		for (int i = 0; i <= a.last; i++)
-		{
-			out << a.arr[i] << " ";
-		}
+			for (int i = a.start; i < a.size; i++)
+			{
+				out << a.arr[i] << " ";
+			}
+			for (int i = 0; i <= a.last; i++)
+			{
+				out << a.arr[i] << " ";
+			}
+		}	
+		out << std::endl;
 		return out;
 	}
-	friend istream& operator>>(istream& in, const ArrayQueue<T>& l) //О(1)
+	friend std::istream& operator>>(std::istream& in, const ArrayQueue<T>& l) //О(1), а ако трябва да се преоразмерява става О(len)
 	{
 		T what;
 		in >> what;
@@ -155,14 +163,14 @@ public:
 		return in;
 	}
 
-	friend ofstream& operator<<(ofstream& fOut, const ArrayQueue<T>& a) //O(len)
+	friend std::ofstream& operator<<(std::ofstream& fOut, const ArrayQueue<T>& a) //O(len)
 	{
-		if (a.last >= a.start) {
+		if (a.last >= a.start)
+		{
 			for (int i = a.start; i <= a.last; i++)
 			{
 				fOut << a.arr[i];
 			}
-			return fOut;
 		}
 		else
 		{
@@ -176,8 +184,10 @@ public:
 			}
 			return a.out;
 		}
+		fOut << std::endl;
+		return fOut;
 	}
-	friend ifstream& operator>>(ifstream& fIn, const ArrayQueue<T>& l) //O(1)
+	friend std::ifstream& operator>>(std::ifstream& fIn, const ArrayQueue<T>& l) //O(1), а ако трябва да се преоразмерява става О(len)
 	{
 		T what;
 		fIn >> what;

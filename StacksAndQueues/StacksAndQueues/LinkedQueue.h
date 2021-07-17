@@ -6,14 +6,14 @@ template<typename T>
 class LinkedQueue : public BasicLinkedDataStructure<T>
 {
 protected:
-	Node* last;
+	Node<T>* last;
 
 	void copy(const LinkedQueue<T>& otherQueue) //O(otherQueue.len)
 	{
 		Node<T>* currOther = otherQueue.start;
 		if (!currOther)
 		{
-			start = NULL;
+			this->start = NULL;
 			last = NULL;
 			return;
 		}
@@ -26,7 +26,7 @@ protected:
 
 
 public:
-	LinkedQueue() : BasicLinkedDataStructure() //O(1)
+	LinkedQueue() : BasicLinkedDataStructure<T>() //O(1)
 	{
 		last = NULL;
 	}
@@ -38,27 +38,27 @@ public:
 	{
 		if (this != &otherQueue)
 		{
-			clear();
+			this->clear();
 			copy(otherQueue);
 		}
 		return *this;
 	}
-	~LinkedQueue() : ~BasicLinkedDataStructure() {} //O(len)
+	~LinkedQueue() {} //O(len)
 
 	void push(const T& x) //O(1)
 	{
-		if (!start)
+		if (!this->start)
 		{
-			start = new Node<T>(x);
-			last = start;
+			this->start = new Node<T>(x);
+			last = this->start;
 			return;
 		}
-		Node<T>* newEnd = new Node(x);
+		Node<T>* newEnd = new Node<T>(x);
 		last->next = newEnd;
 		last=newEnd;
 	}
 	
-	friend ostream& operator<<(ostream& out, const LinkedQueue& l) // O(len)
+	friend std::ostream& operator<<(std::ostream& out, const LinkedQueue& l) // O(len)
 	{
 		if (l.empty())
 		{
@@ -72,9 +72,10 @@ public:
 			curr = curr->next;
 		}
 		delete curr; //Защото е NULL
+		out << std::endl;
 		return out;
 	}
-	friend istream& operator>>(istream& in, const LinkedQueue<T>& l) //O(1)
+	friend std::istream& operator>>(std::istream& in, LinkedQueue<T>& l) //O(1)
 	{
 		T what;
 		in >> what;
@@ -82,7 +83,7 @@ public:
 		return in;
 	}
 
-	friend ofstream& operator<<(ofstream& fOut, const LinkedQueue<T>& l)  // O(len)
+	friend std::ofstream& operator<<(std::ofstream& fOut, const LinkedQueue<T>& l)  // O(len)
 	{															
 		Node<T>* curr = l.start;
 		while (curr)
@@ -91,9 +92,10 @@ public:
 			curr = curr->next;
 		}
 		delete curr; //Защото е NULL
-		return out;
+		fOut << std::endl;
+		return fOut;
 	}
-	friend ifstream& operator>>(ifstream& fIn, const LinkedQueue<T>& l) //O(1)
+	friend std::ifstream& operator>>(std::ifstream& fIn, LinkedQueue<T>& l) //O(1)
 	{
 		T what;
 		fIn >> what;

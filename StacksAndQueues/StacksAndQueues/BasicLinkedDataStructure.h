@@ -1,14 +1,16 @@
 ﻿#pragma once
+#include<iostream>
+
 template <typename T>
 struct Node
 {
 	T data;
 	Node* next;
-	Node(T const& d) :data(d) //O(1)
+	Node(T const& d) : data(d) //O(1)
 	{
 		next = NULL;
 	}
-	Node():data() //O(1)
+	Node() : data() //O(1)
 	{
 		next = NULL;
 	}
@@ -40,14 +42,15 @@ public:
 			delete curr;
 			curr = temp;
 		}
+		start = NULL;
 	}
 
 	virtual void push(const T&) = 0;
 	T pop() //O(1)
 	{
-		if (!start)
+		if (!this->start)
 		{
-			cerr << "Empty Structure!" << endl;
+			std::cerr << "Empty Structure!" << std::endl;
 			return T();
 		}
 		Node<T>* temp = start;
@@ -57,18 +60,18 @@ public:
 		return result;
 	}
 
-	bool empty() //O(1)
+	bool empty() const //O(1)
 	{
 		if (!start) return true;
 		return false;
 	}
-	int len() //O(len)
+	int len() const //O(len)
 	{
 		Node<T>* curr = start;
-		int counter=0;
+		int counter = 0;
 		while (curr)
 		{
-			counter++;
+			++counter;
 			curr = curr->next;
 		}
 		return counter;
