@@ -1,11 +1,14 @@
 #pragma once
+#include <iostream>
+#include <fstream>
+
 template <typename T>
 struct Node
 {
 	int balance;
 	T data;
-	Node* left;
-	Node* right;
+	Node<T>* left;
+	Node<T>* right;
 };
 
 template <typename T>
@@ -48,10 +51,10 @@ public:
 
 	int size() const;
 
-	friend ostream& operator<<(ostream&, const AVLTree<T>&);
-	friend istream& operator>>(istream&, AVLTree<T>&);
-	friend ofstream& operator<<(ofstream&, const AVLTree<T>&);
-	friend ifstream& operator>>(ifstream&, AVLTree<T>&);
+	friend std::ostream& operator<<(std::ostream&, const AVLTree<T>&);
+	friend std::istream& operator>>(std::istream&, AVLTree<T>&);
+	friend std::ofstream& operator<<(std::ofstream&, const AVLTree<T>&);
+	friend std::ifstream& operator>>(std::ifstream&, AVLTree<T>&);
 
 	bool operator<(const AVLTree<T>&);
 };

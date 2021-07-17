@@ -89,8 +89,8 @@ vector<int> BFSLinked(IntGraph graph, int start)
 	return lengths;
 }
 
-vector<int> DFSArray(vector<vector<bool>> adjacency,int start) //Тук и в другата функция използвам, че неориентиран граф е
-{															//подвид на ориентирания
+vector<int> DFSArray(vector<vector<bool>> adjacency,int start) //Тук и в другата функция използвам, че неориентиран граф е подвид на ориентирания
+{															
 	int size = adjacency.size();
 	vector<bool> reached;
 	reached.resize(size);
@@ -167,3 +167,11 @@ vector<int> DFSLinked(IntGraph graph, int start)
 }
 
 //Не съм сигурен как да ги рандъмна толкова големи данни
+
+
+int main()
+{
+
+	cin.get();
+	return 0;
+}

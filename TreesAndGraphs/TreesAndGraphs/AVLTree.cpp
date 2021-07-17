@@ -1,6 +1,7 @@
 ﻿#include "AVLTree.h"
 #include <iostream>
 #include <fstream>
+#include <iomanip>
 using namespace std;
 
 template<typename T>
@@ -51,6 +52,15 @@ void AVLTree<T>::leftRotate(Node<T>* &nowRoot) //O(1)
 	temp->right = nowRoot->left;
 	nowRoot->left = temp;
 
+	--temp->balance;
+	if (nowRoot->balance > 0) temp->balance -= nowRoot->balance;
+	--nowRoot->balance;
+	if (temp->balance < 0) nowRoot->balance += temp->balance;
+	/*Node<T>* temp = nowRoot;
+	nowRoot = nowRoot->right;
+	temp->right = nowRoot->left;
+	nowRoot->left = temp;
+
 	temp->balance = temp->balance – 1;
 	if (nowRoot->balance > 0) 
 	{
@@ -60,7 +70,7 @@ void AVLTree<T>::leftRotate(Node<T>* &nowRoot) //O(1)
 	if (temp->balance < 0) 
 	{
 		nowRoot->balance = nowRoot->balance + temp->balance;
-	}
+	}*/
 }
 
 template<typename T>
@@ -70,9 +80,18 @@ void AVLTree<T>::rightRotate(Node<T>* &nowRoot) //O(1)
 	nowRoot = nowRoot->left;
 	temp->left = nowRoot->right;
 	nowRoot->right = temp;
+
+	++temp->balance;
+	if (nowRoot->balance < 0) temp->balance -= nowRoot->balance;
+	++nowRoot->balance;
+	if (temp->balance > 0) nowRoot->balance += temp->balance;
+	/*Node<T>* temp = nowRoot;
+	nowRoot = nowRoot->left;
+	temp->left = nowRoot->right;
+	nowRoot->right = temp;
 	
 	temp->balance = temp->balance + 1;
-	if (nowRoot->balance < 0) 
+	if (nowRoot->balance < 0)
 	{
 		temp->balance = temp->balance – nowRoot->balance;
 	}
@@ -81,7 +100,7 @@ void AVLTree<T>::rightRotate(Node<T>* &nowRoot) //O(1)
 	if (temp->balance > 0) 
 	{
 		nowRoot->balance = nowRoot->balance + temp->balance;
-	}
+	}*/
 }
 
 template <typename T>
@@ -227,7 +246,7 @@ AVLTree<T>::~AVLTree() //O()
 template<typename T>
 AVLTree<T>::AVLTree(const AVLTree<T> &otherTree) //O(otherTree.nodes)
 {
-	copyAVLTree(nowRoot);
+	copyAVLTree(otherTree);
 }
 
 template<typename T>
@@ -344,7 +363,7 @@ istream & operator>>(istream &input, AVLTree<T> &tree) //O(log tree.nodes)
 }
 
 template<typename T>
-ofstream & operator<<(ofstream &outFIle, const AVLTree<T> &tree) //O(1)
+ofstream & operator<<(ofstream &outFile, const AVLTree<T> &tree) //O(1)
 {
 	T data = tree.getRootData();
 	outFile << data << " ";

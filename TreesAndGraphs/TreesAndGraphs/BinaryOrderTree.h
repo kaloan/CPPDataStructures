@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <fstream>
 template<typename T>
 struct Node
 {
@@ -47,10 +49,10 @@ public:
 
 	void minTree(T &, BinaryOrderTree<T> &) const;
 
-	friend ostream& operator<<(ostream&, const BinaryOrderTree<T>&);
-	friend istream& operator>>(istream&, BinaryOrderTree<T>&);
-	friend ofstream& operator<<(ofstream&, const BinaryOrderTree<T>&);
-	friend ifstream& operator>>(ifstream&, BinaryOrderTree<T>&);
+	friend std::ostream& operator<<(std::ostream&, const BinaryOrderTree<T>&);
+	friend std::istream& operator>>(std::istream&, BinaryOrderTree<T>&);
+	friend std::ofstream& operator<<(std::ofstream&, const BinaryOrderTree<T>&);
+	friend std::ifstream& operator>>(std::ifstream&, BinaryOrderTree<T>&);
 
 	bool operator<(const BinaryOrderTree<T>&);
 };

@@ -132,7 +132,7 @@ Node<T>* BinaryOrderTree<T>::getRootPtr() const //O(1)
 template<typename T>
 BinaryOrderTree<T> BinaryOrderTree<T>::leftTree() const //O(root->left.nodes)
 {
-	BinOrdTree<T> result;
+	BinaryOrderTree<T> result;
 	copy(result.root, root->left);
 	return result;
 }
@@ -140,7 +140,7 @@ BinaryOrderTree<T> BinaryOrderTree<T>::leftTree() const //O(root->left.nodes)
 template<typename T>
 BinaryOrderTree<T> BinaryOrderTree<T>::rightTree() const //O(root->right.nodes)
 {
-	BinOrdTree<T> result;
+	BinaryOrderTree<T> result;
 	copy(result.root, root->right);
 	return result;
 }
@@ -293,7 +293,7 @@ istream & operator>>(istream &input, BinaryOrderTree<T> &tree) //O(log tree.node
 }
 
 template<typename T>
-ofstream & operator<<(ofstream &outFIle, const BinaryOrderTree<T> &tree) //O(1)
+ofstream & operator<<(ofstream &outFile, const BinaryOrderTree<T> &tree) //O(1)
 {
 	T data = tree.getRootData();
 	outFile << data << " ";
