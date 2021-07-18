@@ -1,17 +1,20 @@
 #pragma once
+#include <iostream>
+#include <fstream>
+
 template <typename T>
 struct Node
 {
 	T data;
 	Node<T>* left;
 	Node<T>* right;
-	Node(T info)
+	Node(const T& info) : data(info)
 	{
-		data = info;
 		left = NULL;
 		right = NULL;
 	}
-};
+};
+
 template <typename T>
 class BinaryTree
 {
@@ -19,9 +22,9 @@ private:
 	Node<T> *root;
 
 	void deleteBinaryTree(Node<T> * &) const;
-
+	
 	void copyFromNode(Node<T> * &, Node<T> * const &) const;
-	void copyBinaryTree(const BinaryTree<T>&);
+	void copyBinaryTree(const BinaryTree&);
 
 	void printFromNode(const Node<T> *) const;
 	void createBinaryTree(Node<T> * &) const;
@@ -45,15 +48,22 @@ public:
 	void print() const;
 
 	void create();
-	void createWithData(T, BinaryTree<T>, BinaryTree<T>);
+	void createWithData(const T&, const BinaryTree<T>&, const BinaryTree<T>&);
 
 	int size() const;
 	void insert(const T&);
 
-	friend ostream& operator<<(ostream&, const BinaryTree<T>&);
-	friend istream& operator>>(istream&, BinaryTree<T>&);
-	friend ofstream& operator<<(ofstream&, const BinaryTree<T>&);
-	friend ifstream& operator>>(ifstream&, BinaryTree<T>&);
+	template<typename T>
+	friend std::ostream& operator<<(std::ostream&, const BinaryTree<T>&);
+
+	template<typename T>
+	friend std::istream& operator>>(std::istream&, BinaryTree<T>&);
+
+	template<typename T>
+	friend std::ofstream& operator<<(std::ofstream&, const BinaryTree<T>&);
+
+	template<typename T>
+	friend std::ifstream& operator>>(std::ifstream&, BinaryTree<T>&);
 
 	bool operator<(const BinaryTree<T>&);
 };

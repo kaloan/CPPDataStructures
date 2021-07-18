@@ -1,13 +1,15 @@
 #pragma once
+#include <iostream>
+#include <fstream>
+
 template <typename T>
 struct DNode
 {
 	T data;
 	DNode* prev;
 	DNode* next;
-	DNode(T info)
+	DNode(const T& info) : data(info)
 	{
-		data = info;
 		prev = NULL;
 		next = NULL;
 	}
@@ -43,10 +45,17 @@ public:
 	void print() const;
 	void print_reverse() const;
 
-	friend ostream& operator<<(ostream&, DoubleLinkedList<T>&);
-	friend istream& operator>>(istream&, DoubleLinkedList<T>&);
-	friend ofstream& operator<<(ofstream&, DoubleLinkedList<T>&);
-	friend ifstream& operator>>(ifstream&, DoubleLinkedList<T>&);
+	template<typename T>
+	friend std::ostream& operator<<(std::ostream&, DoubleLinkedList<T>&);
+
+	template<typename T>
+	friend std::istream& operator>>(std::istream&, DoubleLinkedList<T>&);
+
+	template<typename T>
+	friend std::ofstream& operator<<(std::ofstream&, DoubleLinkedList<T>&);
+
+	template<typename T>
+	friend std::ifstream& operator>>(std::ifstream&, DoubleLinkedList<T>&);
 
 	bool operator<(const DoubleLinkedList<T>&);
 };

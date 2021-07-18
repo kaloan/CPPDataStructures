@@ -1,18 +1,37 @@
 ﻿#include "DoubleCircularList.h"
-#include<iostream>
-#include<fstream>
+#include <iostream>
+#include <fstream>
 using namespace std;
 
 
 template<typename T>
 void DoubleCircularList<T>::clear() //O(len)
 {
+	/*
 	DNode<T>* mover;
 	while (start)
 	{
 		mover = start;
 		start = start->next;
 		delete mover;
+	}
+	start = NULL;
+	*/
+	if (!start) return;
+
+	DNode<T>* mover = start->next;
+
+	while (mover != start)
+	{
+		mover->next = start->next;
+		delete start;
+		start = mover->next;
+	}
+
+	if (mover == start)
+	{
+		delete start;
+		start = NULL;
 	}
 }
 
@@ -65,8 +84,7 @@ template<typename T>
 void DoubleCircularList<T>::iterStart(DNode<T>* place) //O(1)
 {
 	if (place) curr = place;
-	else if (start) curr = start;
-	else curr = NULL;
+	else curr = start;
 }
 
 template<typename T>
@@ -75,8 +93,9 @@ DNode<T>* DoubleCircularList<T>::iter() //O(1)
 	if (!curr) return NULL;
 
 	DNode<T> *temp = curr;
-	if (curr == start) curr = NULL;
-	else if (curr) curr = curr->next;
+	curr = curr->next;
+	//if (curr == start) curr = NULL;
+	//else if (curr) curr = curr->next;
 
 	return temp;
 }
@@ -88,10 +107,10 @@ void DoubleCircularList<T>::insertAtStart(const T &info) //O(1)
 	if (start)
 	{
 		newStart->prev = start->prev;
+		newStart->next = start;
 		start->prev->next = newStart;
 		start->prev = newStart;
-		newStart->next = start;
-		start = start->prev;
+		start = newStart;
 	}
 	else
 	{
@@ -110,19 +129,20 @@ bool DoubleCircularList<T>::deleteThis(DNode<T>* place, T &info) //O(1)
 		return false;
 	}
 	info = place->data;
-	if (start == start->next) 
+	/*if (start == start->next) 
 	{
 		start = NULL;
 		delete place;
 		return true;
-	}
+	}*/
 
 	DNode<T> *oneBefore = place->prev;
 	oneBefore->next = place->next;
 	place->next->prev = oneBefore;
 
 	if (place == start) start = start->next;
-	delete place;	return true;
+	delete place;
+	return true;
 }
 
 template<typename T>
@@ -171,7 +191,7 @@ template<typename T>
 ostream & operator<<(ostream &output, DoubleCircularList<T>& list) //O(1)
 {
 	DNode<T>* temp = list.iter();
-	output << temp->data << " ";
+	if (temp) output << temp->data << " ";
 	return output;
 }
 
@@ -188,8 +208,8 @@ template<typename T>
 ofstream & operator<<(ofstream &outFile, DoubleCircularList<T>& list) //O(1)
 {
 	DNode<T>* temp = list.iter();
-	outFile << temp->data << " ";
-	return output;
+	if (temp) outFile << temp->data << " ";
+	return outFile;
 }
 
 template<typename T>

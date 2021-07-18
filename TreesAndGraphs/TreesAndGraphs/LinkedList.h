@@ -1,5 +1,6 @@
 #pragma once
 #include<iostream>
+#include <fstream>
 
 template <typename T>
 struct Node
@@ -45,9 +46,17 @@ public:
 
 	void print() const;
 
+
+	template<typename T>
 	friend std::ostream& operator<<(std::ostream&, LinkedList<T>&);
+
+	template<typename T>
 	friend std::istream& operator>>(std::istream&, LinkedList<T>&);
+
+	template<typename T>
 	friend std::ofstream& operator<<(std::ofstream&, LinkedList<T>&);
+
+	template<typename T>
 	friend std::ifstream& operator>>(std::ifstream&, LinkedList<T>&);
 
 	bool operator<(const LinkedList<T>&);

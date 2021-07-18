@@ -1,13 +1,18 @@
 #pragma once
-#pragma once
+#include<iostream>
+#include <fstream>
+
 template <typename T>
 struct Node
 {
 	T data;
 	Node<T>* next;
-	Node(T sData)
+	Node()
 	{
-		data = sData;
+		next = NULL;
+	}
+	Node(const T& sData) : data(sData)
+	{
 		next = NULL;
 	}
 };
@@ -15,9 +20,9 @@ template<typename T>
 class LinkedList
 {
 private:
-	Node* start;
-	Node* end;
-	Node* curr;
+	Node<T>* start;
+	Node<T>* end;
+	Node<T>* curr;
 
 	void copy(const LinkedList<T>&);
 	void clear();
@@ -41,10 +46,18 @@ public:
 
 	void print() const;
 
-	friend ostream& operator<<(ostream&,LinkedList<T>&);
-	friend istream& operator>>(istream&, LinkedList<T>&);
-	friend ofstream& operator<<(ofstream&, LinkedList<T>&);
-	friend ifstream& operator>>(ifstream&, LinkedList<T>&);
+
+	template<typename T>
+	friend std::ostream& operator<<(std::ostream&, LinkedList<T>&);
+
+	template<typename T>
+	friend std::istream& operator>>(std::istream&, LinkedList<T>&);
+
+	template<typename T>
+	friend std::ofstream& operator<<(std::ofstream&, LinkedList<T>&);
+
+	template<typename T>
+	friend std::ifstream& operator>>(std::ifstream&, LinkedList<T>&);
 
 	bool operator<(const LinkedList<T>&);
 };

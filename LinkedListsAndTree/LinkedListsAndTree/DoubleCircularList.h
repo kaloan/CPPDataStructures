@@ -1,10 +1,18 @@
 #pragma once
+#include<iostream>
+#include <fstream>
+
 template<typename T>
 struct DNode
 {
 	T data;
 	DNode* next;
 	DNode* prev;
+	DNode(const T& info) : data(info)
+	{
+		next = NULL;
+		prev = NULL;
+	}
 };
 
 template<typename T>
@@ -32,10 +40,17 @@ public:
 
 	void print() const;
 
-	friend ostream& operator<<(ostream&, DoubleCircularList<T>&);
-	friend istream& operator>>(istream&, DoubleCircularList<T>&);
-	friend ofstream& operator<<(ofstream&, DoubleCircularList<T>&);
-	friend ifstream& operator>>(ifstream&, DoubleCircularList<T>&);
+	template<typename T>
+	friend std::ostream& operator<<(std::ostream&, const DoubleCircularList<T>&);
+
+	template<typename T>
+	friend std::istream& operator>>(std::istream&, DoubleCircularList<T>&);
+
+	template<typename T>
+	friend std::ofstream& operator<<(std::ofstream&, const DoubleCircularList<T>&);
+
+	template<typename T>
+	friend std::ifstream& operator>>(std::ifstream&, DoubleCircularList<T>&);
 
 	bool operator<(const DoubleCircularList<T>&);
 };

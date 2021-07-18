@@ -81,7 +81,7 @@ bool DoubleLinkedList<T>::deleteThis(DNode<T>* place, T &info) //O(1)
 		return false;
 	}
 	info = place->data;
-	if (start == end) 
+	if (place == start && start == end) 
 	{
 		start = NULL;
 		end = NULL;
@@ -186,7 +186,7 @@ template<typename T>
 ostream & operator<<(ostream &output, DoubleLinkedList<T>& list) //O(1)
 {
 	DNode<T>* temp = list.iterNext();
-	output << temp->data << " ";
+	if (temp) output << temp->data << " ";
 	return output;
 }
 
@@ -203,7 +203,7 @@ template<typename T>
 ofstream & operator<<(ofstream &outFile, DoubleLinkedList<T>& list) //O(1)
 {
 	DNode<T>* temp = list.iter();
-	outFile << temp->data << " ";
+	if(temp) outFile << temp->data << " ";
 	return outFile;
 }
 

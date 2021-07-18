@@ -21,15 +21,17 @@ void BinaryTree<T>::copyFromNode(Node<T>*& spot, Node<T>* const &toCopy) const /
 	if (toCopy) 
 	{
 		spot = new Node<T>(toCopy->data);
-		copy(spot->left, toCopy->left);
-		copy(spot->right, toCopy->right);
+		copyFromNode(spot->left, toCopy->left);
+		copyFromNode(spot->right, toCopy->right);
+		//copy(spot->left, toCopy->left);
+		//copy(spot->right, toCopy->right);
 	}
 }
 
 template<typename T>
 void BinaryTree<T>::copyBinaryTree(const BinaryTree<T>& otherTree) //О(otherTree.nodes)
 {
-	copy(root, otherTree.root);
+	copyFromNode(root, otherTree.root);
 }
 
 template<typename T>
@@ -54,7 +56,7 @@ void BinaryTree<T>::createBinaryTree(Node<T>*& spot) const //O(2^n)
 	cin >> info;
 	spot = new Node<T>(info);
 
-	cout << "left BinaryTree of: " << x << " y/n? ";
+	cout << "left BinaryTree of: " << info << " y/n? ";
 	cin >> additional;
 
 	if (additional == 'y') 
@@ -62,7 +64,7 @@ void BinaryTree<T>::createBinaryTree(Node<T>*& spot) const //O(2^n)
 		createBinaryTree(spot->left);
 	}
 
-	cout << "right BinaryTree of: " << x << " y/n? ";
+	cout << "right BinaryTree of: " << info << " y/n? ";
 	cin >> additional;
 
 	if (additional == 'y') 
@@ -119,7 +121,7 @@ template<typename T>
 BinaryTree<T> BinaryTree<T>::leftBinaryTree() const //O(nodes') nodes' са възлите в лявото поддърво 
 {
 	BinaryTree<T> copiedTree;
-	copy(copiedTree.root, root->left);
+	copyFromNode(copiedTree.root, root->left);
 	return copiedTree;
 }
 
@@ -127,7 +129,7 @@ template<typename T>
 BinaryTree<T> BinaryTree<T>::rightBinaryTree() const //O(nodes') nodes' са възлите в дясното поддърво 
 {
 	BinaryTree<T> copiedTree;
-	copy(copiedTree.root, root->right);
+	copyFromNode(copiedTree.root, root->right);
 	return copiedTree;
 }
 
@@ -154,6 +156,7 @@ template<typename T>
 void BinaryTree<T>::print() const //О(nodes)
 {
 	printFromNode(root);
+	cout << endl;
 }
 
 template<typename T>
@@ -163,11 +166,11 @@ void BinaryTree<T>::create()
 }
 
 template<typename T>
-void BinaryTree<T>::createWithData(T info, BinaryTree<T> left, BinaryTree<T> right) //O(left.nodes+right.nodes)
+void BinaryTree<T>::createWithData(const T& info,const BinaryTree<T>& left,const BinaryTree<T>& right) //O(left.nodes+right.nodes)
 {
 	root = new Node<T>(info);
-	copy(root->left, left.root);
-	copy(root->right, right.root);
+	copyFromNode(root->left, left.root);
+	copyFromNode(root->right, right.root);
 }
 
 template<typename T>
@@ -194,8 +197,15 @@ bool BinaryTree<T>::operator<(const BinaryTree<T>& otherTree) //O(nodes+otherTre
 template<typename T>
 ostream & operator<<(ostream &output, const BinaryTree<T>& tree) //O(1)
 {
-	T data = tree.getRootData();
-	output << data << " ";
+	if (tree.empty())
+	{
+		output << "The tree is empty!" << endl;
+	}
+	else 
+	{
+		T data = tree.getRootData();
+		output << data << " ";
+	}
 	return output;
 }
 
@@ -211,8 +221,11 @@ istream & operator>>(istream &input, BinaryTree<T>& tree) //O(1)
 template<typename T>
 ofstream & operator<<(ofstream &outFile, const BinaryTree<T>& tree) //O(1)
 {
-	T data = tree.getRootData();
-	outFile << data << " ";
+	if (!tree.empty()) 
+	{
+		T data = tree.getRootData();
+		outFile << data << " ";
+	}
 	return outFile;
 }
 

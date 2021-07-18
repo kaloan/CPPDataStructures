@@ -66,9 +66,9 @@ template<typename T>
 void LinkedList<T>::insertAtEnd(const T &info) //O(1)
 {
 	Node<T>* newEnd = new Node<T>(info);
-	if (end) end->next = newElemPtr;
-	else start = newElemPtr;
-	end = newElemPtr;
+	if (end) end->next = newEnd;
+	else start = newEnd;
+	end = newEnd;
 }
 
 template<typename T>
@@ -214,7 +214,7 @@ template <typename T>
 ostream & operator<<(ostream &output, LinkedList<T>& list) //O(1)
 {
 	Node<T>* temp = list.iter();
-	output << temp->data << " ";
+	if (temp) output << temp->data << " ";
 	return output;
 }
 
@@ -231,7 +231,7 @@ template<typename T>
 ofstream & operator<<(ofstream &outFile, LinkedList<T>& list) //O(1)
 {
 	Node<T>* temp = list.iter();
-	outFile << temp->data << " ";
+	if (temp) outFile << temp->data << " ";
 	return outFile;
 }
 
