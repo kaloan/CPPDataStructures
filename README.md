@@ -2,7 +2,7 @@
 
 Data structures I implemented a long time ago at uni.
 
---Some work is still left.--
+~~Some work is still left.~~
 
 Tested and works. <br>
 
